@@ -4,21 +4,25 @@
 使用docker-compose 构建一个nginx-php-mysql系统，可以通过浏览器访问以下页面：
 
 　　* localhost/index
+  
 　　* localhost/text.php
+  
 　　* localhost/mysql.php
+  
 
 目录结构
-    -docker_lpnm
-      -conf
-        -nginx.conf
-      -html
-        -index.html
-        -mysql.php
-        -test.php
-      -docker-compose.yml
+    docker_lpnm
+      conf
+        nginx.conf
+      html
+        index.html
+        mysql.php
+        test.php
+      docker-compose.yml
 
 ---
-nginx.conf中
+### nginx.conf中
+    
     worker_processes  1;
     events {
         worker_connections  1024;
@@ -51,9 +55,11 @@ nginx.conf中
     }
  
 
-index.html中
+### index.html中
+
     index.html
-mysql.php中
+    
+### mysql.php中
     <?php
     $servername = 'mysql';
     $username = 'root';
@@ -66,7 +72,9 @@ mysql.php中
         echo 'mysql connected!!!';
         mysqli_close($conn)
     ?>
-test.php中
+    
+### test.php中
+
     <?php
     phpinfo();
     ?>
