@@ -7,4 +7,4 @@
 
 * localhost/text.php
 
-*localhost/mysql.php
+* localhost/mysql.php
