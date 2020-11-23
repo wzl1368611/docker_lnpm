@@ -3,8 +3,8 @@
 
 使用docker-compose 构建一个nginx-php-mysql系统，可以通过浏览器访问页面
 
-localhost/index
+* localhost/index
 
-localhost/text.php
+* localhost/text.php
 
-localhost/mysql.php
+*localhost/mysql.php
